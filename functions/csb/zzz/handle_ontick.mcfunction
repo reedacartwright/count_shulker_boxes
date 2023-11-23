@@ -17,8 +17,8 @@ scoreboard players operation TimerMinutes csb_results = timer csb_global
 scoreboard players operation TimerMinutes csb_results /= k_1200 csb_global
 
 # Time Stats
-execute if score box_count csb_global matches 0.. run scoreboard players operation TimeFirstBox csb_results = first_tick csb_global
-execute if score box_count csb_global matches 0.. run scoreboard players operation TimeLastBox csb_results = last_tick csb_global
+execute if score box_count csb_global matches 0.. run scoreboard players operation TimeFirstSig csb_results = first_tick csb_global
+execute if score box_count csb_global matches 0.. run scoreboard players operation TimeLastSig csb_results = last_tick csb_global
 execute if score box_count csb_global matches 0.. run scoreboard players operation TimeTotal csb_results = tick_span csb_global
 
 execute unless score tick_diff1 csb_global matches 0 run scoreboard players operation TimeSpan1 csb_results = tick_diff1 csb_global
