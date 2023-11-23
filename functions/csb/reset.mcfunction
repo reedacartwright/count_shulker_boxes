@@ -12,15 +12,8 @@ scoreboard players reset * csb_results
 scoreboard players set csb_state csb_global 0
 
 # Setup Constants
-scoreboard players set k_1728 csb_global 1728
 scoreboard players set k_1200 csb_global 1200
-scoreboard players set k_60 csb_global 60
-scoreboard players set k_20 csb_global 20
-
-scoreboard players set k_65536 csb_global 65536
 scoreboard players set k_alpha csb_global 124416000
-scoreboard players set k_alpha_hi csb_global 1898
-scoreboard players set k_alpha_lo csb_global 28672
 
 # Setup Stats
 scoreboard players set box_count csb_global -1
