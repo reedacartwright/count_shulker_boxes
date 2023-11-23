@@ -1,0 +1,36 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Display the bounding boxes of a village",
+    "name": "CSB: Count Shulker Boxes",
+    "uuid":"5e80d6c2-8c2e-48ae-acf4-314e9d8b909c",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "metadata": {
+    "authors": ["Reed Cartwright"],
+    "license": "MIT"
+  },
+  "modules":
+    [
+      {
+        "description": "CSB Behavior Pack",
+        "type": "data",
+        "uuid": "7efcbf49-330f-4940-bf2c-707929730c92",
+        "version": [1, 0, 0]
+      },
+      {
+        "type": "script",
+        "lanugage": "javascript",
+        "uuid": "03d69a0b-ad06-455c-912a-6778ee12e66c",
+        "version": [1, 0, 0],
+        "entry": "scripts/main.js"
+      }
+    ],
+  "dependencies" : [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.5.0"
+    }
+  ]
+}
