@@ -29,5 +29,3 @@ execute unless score tick_diff5 csb_global matches 0 run scoreboard players oper
 
 execute if score box_count csb_global matches 1.. run scoreboard players operation TimeSpanAvg csb_results = tick_avg csb_global
 execute if score box_count csb_global matches 1.. run scoreboard players operation DropRate csb_results = drop_rate csb_global
-
-

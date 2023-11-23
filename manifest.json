@@ -11,26 +11,12 @@
     "authors": ["Reed Cartwright"],
     "license": "MIT"
   },
-  "modules":
-    [
-      {
-        "description": "CSB Behavior Pack",
-        "type": "data",
-        "uuid": "7efcbf49-330f-4940-bf2c-707929730c92",
-        "version": [1, 0, 0]
-      },
-      {
-        "type": "script",
-        "lanugage": "javascript",
-        "uuid": "03d69a0b-ad06-455c-912a-6778ee12e66c",
-        "version": [1, 0, 0],
-        "entry": "scripts/main.js"
-      }
-    ],
-  "dependencies" : [
+  "modules": [
     {
-      "module_name": "@minecraft/server",
-      "version": "1.5.0"
+      "description": "CSB Behavior Pack",
+      "type": "data",
+      "uuid": "7efcbf49-330f-4940-bf2c-707929730c92",
+      "version": [1, 0, 0]
     }
   ]
 }
