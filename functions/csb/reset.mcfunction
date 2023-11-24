@@ -20,6 +20,8 @@ scoreboard players set box_count csb_global -1
 scoreboard players set first_tick csb_global 2147483647
 scoreboard players set last_tick csb_global 0
 scoreboard players set tick_diff csb_global 0
+scoreboard players set fill_ticks_m2 csb_global 0
+scoreboard players set fill_ticks_avg csb_global 0
 
 # Setup 
 scoreboard players set TimerTicks   csb_results 0

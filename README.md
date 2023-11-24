@@ -44,7 +44,7 @@ following command:
 
 ## Statistics
 
-CSB tracks 13 statistics. Most statistics are not tracked until the first time
+CSB tracks 14 statistics. Most statistics are not tracked until the first time
 `csb/sig_new_box` is called. The time between when `csb/start` is called and
 when `csb/sig_new_box` is first called is the "burn in" time and is used to
 allow a farm to get up to speed and handle any situations where the initial
@@ -61,9 +61,10 @@ full boxes.
   TimeLastSig.
 * DropRate: An estimate of the number of items/hour that the farm produces.
 Assumes that a shulker box can hold 1728 items (27 stacks of 64).
-* TimeSpanAvg: Average number of ticks for the farm to fill a shulker box.
-* TimeSpan1: The time it took to fill the most recent shulker box
-* TimeSpan2 etc.: Similar to TimeSpan1, but for earlier boxes.
+* FillTimeAvg: Average number of ticks for the farm to fill a shulker box.
+* FillTimeVar: The variance of the time it takes to fill a shulker box.
+* FillTime1: The time it took to fill the most recent shulker box
+* FillTime2 etc.: Similar to TimeSpan1, but for earlier boxes.
 
 ## Command Functions
 
