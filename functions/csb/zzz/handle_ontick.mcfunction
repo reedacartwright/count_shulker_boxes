@@ -4,12 +4,11 @@ scoreboard players add timer csb_global 1
 # Reset Results
 # scoreboard players reset * csb_results
 
-# Signal Burnin
-execute unless score box_count csb_global matches 0.. run scoreboard players set WaitingForData csb_results 1
-execute if score box_count csb_global matches 0.. run scoreboard players reset WaitingForData csb_results
+# Reset Burn-in notification
+scoreboard players reset WaitingForData csb_results
 
-# Signal Body
-execute if score box_count csb_global matches 0.. run scoreboard players operation NumBoxes csb_results = box_count csb_global
+# Indicate Number of Boxes
+scoreboard players operation NumBoxes csb_results = box_count csb_global
 
 # Update Time
 scoreboard players operation TimerTicks csb_results = timer csb_global
@@ -17,7 +16,6 @@ scoreboard players operation TimerMinutes csb_results = timer csb_global
 scoreboard players operation TimerMinutes csb_results /= k_1200 csb_global
 
 # Time Stats
-execute if score box_count csb_global matches 0.. run scoreboard players operation TimeFirstSig csb_results = first_tick csb_global
 execute if score box_count csb_global matches 0.. run scoreboard players operation TimeLastSig csb_results = last_tick csb_global
 execute if score box_count csb_global matches 0.. run scoreboard players operation TimeTotal csb_results = tick_span csb_global
 
